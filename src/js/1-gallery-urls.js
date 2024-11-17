@@ -2,5 +2,7 @@
 // We will use these URLs in the next file to load the images.
 
 // Define the URLs for the gallery images
-const img1Url = new URL('../img/image1.png', import.meta.url).href;
-document.getElementById('img1').href = img1Url;
+for (let i = 1; i <= 9; i++) {
+    const imgUrl = new URL(`../img/image${i}.png`, import.meta.url).href;
+    document.getElementById(`img${i}`).href = imgUrl;
+}
