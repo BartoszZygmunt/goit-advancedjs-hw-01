@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/2-form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formularz opinii</title>
   </head>
   <body>
-    <!-- <load src="./partials/header.html" icon-path="img/sprite.svg#logo" /> -->
+    <form class="feedback-form" autocomplete="off">
+      <label>
+        E-mail
+        <input type="email" name="email" autofocus />
+      </label>
+      <label>
+        Wiadomość
+        <textarea name="message" rows="8"></textarea>
+      </label>
+      <button type="submit">Wyślij</button>
+    </form>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <!-- <load src="./partials/vite-promo.html" /> -->
-      <!-- <load src="./partials/badges.html" /> -->
-    </main>
-
-    <!-- <load src="./partials/footer.html" /> -->
-
-    <!-- <script type="module" src="./main.js"></script> -->
+    <script src="./js/2-form.js"></script>
   </body>
 </html>

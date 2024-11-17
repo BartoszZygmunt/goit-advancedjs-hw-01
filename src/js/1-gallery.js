@@ -4,8 +4,8 @@ import '/css/styles.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   const lightbox = new SimpleLightbox('.gallery a', {
-    // Opcjonalne ustawienia
     captions: true,
     captionDelay: 250,
+    captionsData: 'alt',
   });
 });
