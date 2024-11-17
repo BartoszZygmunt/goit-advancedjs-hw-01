@@ -16,7 +16,7 @@
 /* Styl dla etykiet */
 .feedback-form label {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-size: 16px;
   color: #2e2f42;
 }
@@ -24,8 +24,9 @@
 /* Styl dla pola e-mail i tekstu */
 .feedback-form input[type='email'],
 .feedback-form textarea {
-  width: 98%;
-  padding: 10px 0 10px 10px;
+  width: 100%;
+  height: 40px;
+  padding: 8px 0 8px 16px;
   margin-top: 5px;
   font-family: Montserrat, Arial, sans-serif;
   font-size: 16px;
@@ -33,6 +34,12 @@
   border-radius: 5px;
   outline: none;
   transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+
+.feedback-form textarea {
+  height: 80px;
+  padding-top: 8px;
 }
 
 /* Styl pola w stanie hover */
@@ -50,14 +57,16 @@
 
 /* Styl dla przycisku wysyłania */
 .feedback-form button {
-  width: 100%;
+  width: 95px;
+  height: 40px;
   padding: 10px;
   font-family: Montserrat, Arial, sans-serif;
   font-size: 16px;
+  font-weight: 500;
   color: #fff;
   background-color: #4e75ff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
